@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Roundnet Toulouse</title>
+
+<link rel="stylesheet" href="index.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+
+<body class="font-roboto">
+    <header class="flex row space-between texte-blanc background-orange">
+        <div class="font-caviar marge-gauche centrer-vertical" style="width:30%">
+            <a class="flex strecth centrer-vertical">
+                <img classe="centrer-vertical" src="images/logo.png" style="width:4.3rem; height:4.3rem; margin-right:1%"/>
+                <h2>Roundnet Toulouse</h2>
+            </a>
+        </div>
+        <div class="flex font-roboto marge-droite" style="width:50%">
+            <a class="centrer centrer-vertical" id="onglet"> <p>Le club</p> </a>
+            <a class="centrer centrer-vertical" id="onglet"> <p>Les tournois</p> </a>
+            <a class="centrer centrer-vertical" id="onglet"> <p>Actualités</p> </a>
+            <a class="centrer centrer-vertical" id="onglet"> <p>Nous rejoindre</p> </a>
+            <a class="centrer centrer-vertical" id="onglet"> <p>Photos</p> </a>
+        </div>
+    </header>
+
+
+
+    <div class="flex" id=rejoinsnous>
+        <img src="images/background_acceuil.png" style="width:100%"/>
+    </div>
+
+    <div class="flex stretch border-box">
+        <div class="background-jaune texte-21" id="gauche">
+            <h1 style="color: white">Tu ne connais pas le roundnet? </h1> <br/>
+            <p style="font-size: 130%"> Le roundnet est un sport émergeant qui nous
+                arrive des Etats-Unis. 2 équipes de 2 joueurs s'affrontent autour 
+                d'un set (en général de la marque Spikeball) avec une petite balle. 
+                Pour les règles, elles sont très proche de celle du Beach-Volley 
+                sauf qu'il ne faut pas envoyer la balle au dessus du filet mais 
+                dessus! Après le rebond c'est à l'autre équipe de gérer la  balle.</p>
+        </div>
+        <div id="droite">
+            <center>
+                <img class="slide" src="images/roundnet1.jpg" style="width:85%">
+                <img class="slide" src="images/roundnet2.jpg" style="width:85%">
+                <img class="slide" src="images/roundnet3.jpg" style="width:85%">
+            </center>
+            <div class="w3-center w3-container w3-section w3-display-bottommiddle" style="width:100%">
+                <span class="w3-badge demo w3-border w3-transparent" ></span>
+                <span class="w3-badge demo w3-border w3-transparent" ></span>
+                <span class="w3-badge demo w3-border w3-transparent"></span>
+            </div>
+        </div>
+    </div>
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("slide");
+      var rec = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      for (i = 0; i < rec.length; i++) {
+        rec[i].className = rec[i].className.replace(" purple", "");
+      }
+      x[slideIndex-1].style.display = "block";  
+      rec[slideIndex-1].className += " purple";
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1} 
+      setTimeout(showDivs, 3000);
+    }
+    </script>
+
+    <div class="centrer" style="margin:3%">
+        <h3>Le roundnet vous interesse? Vous voulez en voir un peu plus? Jetez un petit coup d'oeil à cette vidéo! </h3>
+        <iframe width="747" height="420" src="https://www.youtube-nocookie.com/embed/f4Dc0wWnXtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+
+    <footer class="texte-blanc background-jaune centrer" style="">
+        <div class="flex row">
+            <div id="newsletter">
+                <form action="">
+                    Recevez toutes les actualités en vous inscrivant à notre newsletter : <br>
+                    <input type="email" id="email" placeholder="Email"></input>
+                    <button> S'inscrire</button>
+                 </form>
+            </div>
+            <div class="flex column" id="reseaux_sociaux">
+                Retrouvez nous aussi sur les réseaux sociaux! <br>
+                <span class="flex row space-evenly" id="logo_reseaux">
+                    <a href="https://www.facebook.com/RoundnetToulouse/"> <img src="images/facebook_fond_blanc.png" style="height: 50px"> </a>
+                    <a href="https://www.instagram.com/roundnet_toulouse/"> <img src="images/instagram_fond_blanc.png" style="height: 50px"> </a>
+                </span>
+            </div>
+        </div>
+        <div  style="padding-top:4%">
+            Et retrouvez les autres communautés de roundnet françaises ici:
+            <span class="flex row space-evenly" style="padding-top:2%">
+                <a href="https://www.roundnetfrance.fr/"> <img src="images/roundnet_france.png" style="height: 100px" alt="Logo de Roundnet France"> </a>
+                <a href="https://titansroundnet.wixsite.com/club"> <img src="images/roundnet_titans.png" style="height: 100px" alt="Logo de Roundnet Titans"> </a>
+                <a href="https://www.facebook.com/roundnet.coc"> <img src="images/roundnet_coc.png" style="height: 100px" alt="Logo de Roundnet Coc"> </a>
+            </span>
+        </div>
+        <div class="texte-21" style="padding-top:4%">
+            &#xA9; ROUNDNET TOULOUSE - <a>Plan du site</a>
+        </div>
+    </footer>
+</body>
+
+</html>

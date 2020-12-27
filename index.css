@@ -1,0 +1,96 @@
+@font-face{
+    font-family: CaviarDreams_Bold;
+    src: url("font/CaviarDreams_Bold.ttf")
+}
+
+@font-face{
+    font-family: Roboto_Thin;
+    src: url("font/Roboto-Thin.ttf")
+}
+
+
+#onglet{
+    width:20%;
+    height: 100%;
+    font-size: 120%;
+}
+#onglet:hover{
+    background-color: #FFECB3;
+    text-decoration:none;
+    color: #212121;
+}
+body{
+    display: flex;
+    margin: 0 0;
+    flex-direction: column;
+}
+footer{
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    box-shadow: 0px 0px 7px #BDBDBD;
+    font-weight: bold;
+}
+#newsletter{
+    margin-left: 5%;
+    width: 40%;
+    font-size: 120%;
+
+}
+#reseaux_sociaux{
+    margin-left: 10%;
+    margin-right: 5%;
+    font-size: 120%;
+    text-align: right;
+    font-weight: bold;
+}
+
+
+
+button{
+    font-family: Roboto_Thin;
+    font-weight: bold;
+}
+#gauche{
+  width: 50%;
+  margin-top: 1%;
+  margin-left: 3.5%;
+  margin-right: 3%;
+  padding-left: 1%;
+  padding-right: 1%;
+  box-shadow: 0px 0px 7px #BDBDBD;
+  text-align: justify;
+}
+#droite{
+  padding-top: 1%;
+  display: block;
+  width: 50%;
+  background-color: white;
+  text-align: center;
+}
+
+
+.slide {display:none}
+.w3-center{display:inline-block;width:auto; text-align:center}
+.w3-content{margin-left:auto;margin-right:auto;max-width:980px}	
+.w3-badge{height:3px; width:100px; display:inline-block; background-color:#BDBDBD}
+.purple{background-color:#7C4DFF; border-color:#7C4DFF; height:5px; width:140px}
+
+.texte-blanc{color: white}
+.texte-21{color: #212121}
+.background-orange{background-color: #FFA000}
+.background-jaune{background-color: #FFC107}
+.font-caviar{font-family: CaviarDreams_Bold}
+.font-roboto{font-family: Roboto_Thin}
+.centrer-vertical{margin: auto}
+.centrer{text-align: center}
+.block{display: block}
+.flex{display: flex}
+.row{flex-direction: row}
+.column{flex-direction: column}
+.space-between{justify-content: space-between}
+.space-evenly{justify-content: space-evenly}
+.stretch{align-items: stretch}
+.border-box{box-sizing: border-box}
+.marge-gauche{margin-left: 3%}
+.marge-droite{margin-right: 3%}
