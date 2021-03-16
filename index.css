@@ -24,6 +24,7 @@ body{
     margin: 0 0;
     flex-direction: column;
 }
+
 footer{
     text-align: center;
     padding-bottom: 1%;
@@ -94,3 +95,7 @@ button{
 .border-box{box-sizing: border-box}
 .marge-gauche{margin-left: 3%}
 .marge-droite{margin-right: 3%}
+.marge-haut{margin-top: 2%}
+.middle{width: 50%}
+.activite_gauche{width: 80%; margin-left:3%}
+.activite_droite{width: 80%; margin-left: 17%}
