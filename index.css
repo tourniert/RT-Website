@@ -52,6 +52,12 @@ button{
     font-family: Roboto_Thin;
     font-weight: bold;
 }
+
+a:link {
+    text-decoration: none;
+  }
+
+
 #gauche{
   width: 50%;
   margin-top: 1%;
@@ -77,18 +83,21 @@ button{
 .w3-badge{height:3px; width:100px; display:inline-block; background-color:#BDBDBD}
 .purple{background-color:#7C4DFF; border-color:#7C4DFF; height:5px; width:140px}
 
-.texte-blanc{color: white}
+.texte-white{color: white}
 .texte-21{color: #212121}
 .background-orange{background-color: #FFA000}
 .background-jaune{background-color: #FFC107}
 .font-caviar{font-family: CaviarDreams_Bold}
 .font-roboto{font-family: Roboto_Thin}
-.centrer-vertical{margin: auto}
 .centrer{text-align: center}
+.justify{text-align: justify}
+.right-text{text-align: right}
+.center{align-items: center;}
 .block{display: block}
 .flex{display: flex}
 .row{flex-direction: row}
 .column{flex-direction: column}
+.shadow{box-shadow: 0px 0px 10px #BDBDBD}
 .space-between{justify-content: space-between}
 .space-evenly{justify-content: space-evenly}
 .stretch{align-items: stretch}
@@ -96,6 +105,7 @@ button{
 .marge-gauche{margin-left: 3%}
 .marge-droite{margin-right: 3%}
 .marge-haut{margin-top: 2%}
+.padding{padding: 2%;}
 .middle{width: 50%}
 .activite_gauche{width: 80%; margin-left:3%}
 .activite_droite{width: 80%; margin-left: 17%}
