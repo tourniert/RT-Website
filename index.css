@@ -25,6 +25,38 @@ body{
     flex-direction: column;
 }
 
+#big-picture{
+    position: relative;
+    display: inline-block;
+}
+
+#title-big-picture{
+    position: absolute;
+    top: 7%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color : #FFFFFF;
+    text-shadow: #696969 1px 0 8px;  
+}
+/* #696969 */
+
+#subtitle-big-picture{
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 2rem;
+    font-weight: bold;
+    color : #FFFFFF;
+    text-shadow: #696969 1px 0 8px;  
+}
+
 footer{
     text-align: center;
     padding-bottom: 1%;
