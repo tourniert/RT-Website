@@ -26,6 +26,39 @@ body{
     margin: 0 0;
     flex-direction: column;
 }
+
+#big-picture{
+    position: relative;
+    display: inline-block;
+}
+
+#title-big-picture{
+    position: absolute;
+    top: 7%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color : #FFFFFF;
+    text-shadow: #696969 1px 0 8px;  
+}
+/* #696969 */
+
+#subtitle-big-picture{
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 2rem;
+    font-weight: bold;
+    color : #FFFFFF;
+    text-shadow: #696969 1px 0 8px;  
+}
+
 footer{
     text-align: center;
     padding-bottom: 1%;
@@ -53,6 +86,12 @@ button{
     font-family: Roboto_Thin;
     font-weight: bold;
 }
+
+a:link {
+    text-decoration: none;
+  }
+
+
 #gauche{
   width: 50%;
   margin-top: 1%;
@@ -82,6 +121,7 @@ button{
 .texte-violet{color: #751aff}
 .texte-noir{color: #000000}
 .texte-marron{color: #994d00}
+.texte-white{color: white}
 .texte-21{color: #212121}
 .background-orange{background-color: #FFA000}
 .background-jaune{background-color: #FFC107}
@@ -90,13 +130,22 @@ button{
 .font-helvetica{font-family: helvetica; font-size: 12px; font-weight: bold;}
 .centrer-vertical{margin: auto}
 .centrer{text-align: center;}
+.justify{text-align: justify}
+.right-text{text-align: right}
+.center{align-items: center;}
 .block{display: block}
 .flex{display: flex}
 .row{flex-direction: row}
 .column{flex-direction: column}
+.shadow{box-shadow: 0px 0px 10px #BDBDBD}
 .space-between{justify-content: space-between}
 .space-evenly{justify-content: space-evenly}
 .stretch{align-items: stretch}
 .border-box{box-sizing: border-box}
 .marge-gauche{margin-left: 3%}
 .marge-droite{margin-right: 3%}
+.marge-haut{margin-top: 2%}
+.padding{padding: 2%;}
+.middle{width: 50%}
+.activite_gauche{width: 80%; margin-left:3%}
+.activite_droite{width: 80%; margin-left: 17%}
