@@ -15,9 +15,11 @@
     font-size: 120%;
 }
 #onglet:hover{
-    background-color: #FFECB3;
     text-decoration:none;
-    color: #212121;
+    color: white;
+    transition-duration: 0.5s;
+    cursor: pointer;
+
 }
 body{
     display: flex;
@@ -77,13 +79,17 @@ button{
 .purple{background-color:#7C4DFF; border-color:#7C4DFF; height:5px; width:140px}
 
 .texte-blanc{color: white}
+.texte-violet{color: #751aff}
+.texte-noir{color: #000000}
+.texte-marron{color: #994d00}
 .texte-21{color: #212121}
 .background-orange{background-color: #FFA000}
 .background-jaune{background-color: #FFC107}
 .font-caviar{font-family: CaviarDreams_Bold}
 .font-roboto{font-family: Roboto_Thin}
+.font-helvetica{font-family: helvetica; font-size: 12px; font-weight: bold;}
 .centrer-vertical{margin: auto}
-.centrer{text-align: center}
+.centrer{text-align: center;}
 .block{display: block}
 .flex{display: flex}
 .row{flex-direction: row}
