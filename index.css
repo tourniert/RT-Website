@@ -8,6 +8,32 @@
     src: url("font/Roboto-Thin.ttf")
 }
 
+body{
+    display: flex;
+    margin: 0 0;
+    flex-direction: column;
+    min-width: 950px;
+}
+
+div{font-family: Helvetica;}
+
+button{
+    font-family: Roboto_Thin;
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+    color: black
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    box-shadow: 0px 0px 7px #BDBDBD;
+    font-weight: bold;
+}
 
 #onglet{
     width:20%;
@@ -21,11 +47,7 @@
     cursor: pointer;
 
 }
-body{
-    display: flex;
-    margin: 0 0;
-    flex-direction: column;
-}
+
 
 #big-picture{
     position: relative;
@@ -60,41 +82,27 @@ body{
 }
 
 
-footer{
-    text-align: center;
-    padding-bottom: 1%;
-    padding-top: 1%;
-    box-shadow: 0px 0px 7px #BDBDBD;
-    font-weight: bold;
-}
+
 #newsletter{
     margin-left: 5%;
     width: 40%;
     font-size: 120%;
 
 }
-#reseaux_sociaux{
-    margin-left: 10%;
-    margin-right: 5%;
-    font-size: 120%;
-    text-align: right;
-    font-weight: bold;
+
+#logo_reseaux{
+    margin-top: 5%;
 }
 
 
 
-button{
-    font-family: Roboto_Thin;
-    font-weight: bold;
-}
 
-a:link {
-    text-decoration: none;
-  }
 
-div{font-family: Helvetica;}
 
-body{min-width: 950px;}
+
+
+
+
 
 #gauche{
   width: 50%;
@@ -114,11 +122,19 @@ body{min-width: 950px;}
   text-align: center;
 }
 
-#contact{
-    width: 25%;
-    margin: 5%;
-    padding: 3% 3% 2% 3%;
+#image_adherer_mail{
+    width : 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
 }
+
+#contact{
+    width: 30%;
+    margin: 5%;
+}
+
 
 #a-contact{    
     background-color: #9c27b0;
@@ -127,8 +143,16 @@ body{min-width: 950px;}
     padding: 4%;
     border-radius: 4px;
     font-weight: bold;
+    margin-top : 5%;
 }
 
+#text-adherer{
+    padding: 3% 3% 7% 3%;
+}
+
+#text-contact{
+    padding: 3% 3% 2% 3%;
+}
 
 .slide {display:none}
 .w3-center{display:inline-block;width:auto; text-align:center}
@@ -137,6 +161,7 @@ body{min-width: 950px;}
 .purple{background-color:#7C4DFF; border-color:#7C4DFF; height:5px; width:140px}
 
 .arrondi{border-radius: 10px;}
+.arrondi-haut{border-radius: 10px 10px 0px 0px;}
 .arrondi-gauche{border-radius: 10px 0px 0px 10px;}
 .arrondi-droite{border-radius: 0px 10px 10px 0px;}
 .texte-blanc{color: white}
@@ -144,7 +169,6 @@ body{min-width: 950px;}
 .texte-noir{color: #000000}
 .texte-marron{color: #994d00}
 .texte-white{color: #000000}
-.texte-21{color: #212121}
 .background-orange{background-color: #FFA000}
 .background-primary{background-color: #80deea}
 .background-primary-light{background-color: #b3ffff}
@@ -152,6 +176,7 @@ body{min-width: 950px;}
 .font-caviar{font-family: CaviarDreams_Bold}
 .font-roboto{font-family: Roboto_Thin}
 .font-helvetica{font-family: helvetica; font-size: 12px; font-weight: bold;}
+.font-tiny{font-size: small;}
 .centrer-vertical{margin: auto}
 .centrer{text-align: center;}
 .justify{text-align: justify}
@@ -162,6 +187,7 @@ body{min-width: 950px;}
 .row{flex-direction: row}
 .column{flex-direction: column}
 .shadow{box-shadow: 0px 0px 10px #BDBDBD}
+.space-around{justify-content: space-around}
 .space-between{justify-content: space-between}
 .space-evenly{justify-content: space-evenly}
 .justify-center{justify-content: center}
@@ -170,7 +196,7 @@ body{min-width: 950px;}
 .marge-gauche{margin-left: 3%}
 .marge-droite{margin-right: 3%}
 .marge-haut{margin-top: 2%}
-.marge-bas{margin-bottom: 10%}
+.marge-bas{margin-bottom: 10%;}
 .padding{padding: 2%;}
 .middle{width: 50%}
 .activite_gauche{width: 80%; margin-left:3%}
