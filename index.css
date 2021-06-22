@@ -23,9 +23,28 @@ button{
     font-weight: bold;
 }
 
+
 a:link {
     text-decoration: none;
-    color: black
+    font-size: small;
+    color: black;
+    font-family: helvetica;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    font-family: helvetica;
+}
+
+a:hover {
+    text-decoration: none;
+    font-size: small;
+    color: white;
+    font-family: helvetica;
+    transition-duration: 0.5s;
+    cursor: pointer;
 }
 
 footer{
@@ -38,18 +57,13 @@ footer{
 
 /* id */
 
-#onglet{
-    width:20%;
-    height: 100%;
-    font-size: 120%;
+#logo-title{
+    margin-left: 1%;
+    width : 25%;
 }
 
-#onglet:hover{
-    text-decoration:none;
-    color: white;
-    transition-duration: 0.5s;
-    cursor: pointer;
-
+#image_logo{
+    height: 4.3rem;
 }
 
 #big-picture{
@@ -129,6 +143,7 @@ footer{
 .space-between{justify-content: space-between}
 .space-evenly{justify-content: space-evenly}
 .justify-center{justify-content: center}
+.grow{flex-grow: 1;}
 
 /* Bloc size */
 .activite_gauche{width: 80%; margin-left:3%}
@@ -148,6 +163,8 @@ footer{
 .arrondi-droite{border-radius: 0px 10px 10px 0px;}
 .shadow{box-shadow: 0px 0px 10px #BDBDBD}
 .border-box{box-sizing: border-box}
+.color-border{border-color: #000000;
+border-style: solid;}
 
 /* Background */
 .background-orange{background-color: #FFA000}
